@@ -15,33 +15,31 @@ export default function Home() {
       
       <div className="border-2">
 
-      <header className="flex flex-wrap items-center max-w-screen-xl justify-between mx-auto p-4"> {/*"flex flex-wrap items-center  border-2 | justify-center gap-2" */}
-        
-        <div ><HamburgerMenuIcon width="24px" height="55px"/></div>
-        <div><a href="https://logowik.com/google-keep-vector-logo-5971.html"><img src="https://logowik.com/content/uploads/images/google-keep3316.jpg" width="60" 
-     height="80" /></a></div>
+        <header className="flex flex-wrap items-center max-w-screen-xl justify-between mx-auto p-4"> {/*"flex flex-wrap items-center  border-2 | justify-center gap-2" */} {/*"flex flex-wrap items-center max-w-screen-xl justify-between mx-auto p-4" */}
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14" ><HamburgerMenuIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
+          <div><a href="https://logowik.com/google-keep-vector-logo-5971.html"><img src="https://logowik.com/content/uploads/images/google-keep3316.jpg" width="60" height="80" /></a></div>
 
-        <div><Command><CommandInput placeholder="Search"  /></Command></div>
+          <div><Command className="bg-yellow-100 rounded-md "><CommandInput placeholder="Search"/></Command></div>
 
-        <div><ReloadIcon width="24px" height="55px"/></div>
-        <div><DashboardIcon width="24px" height="55px"/></div>
-        <div> <GearIcon width="24px" height="55px"/> </div>
-        <div><LayersIcon width="24px" height="55px"/></div>
-        <div><PersonIcon width="24px" height="55px"/></div>
-      </header> 
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"><ReloadIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"><DashboardIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"> <GearIcon width="24px" height="55px" className="mx-auto my-auto"/> </div>
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"><LayersIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"><PersonIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
+        </header> 
       </div>
       
       <main className = "flex mt-2">
 
-        <div className = "w-1/4 ml-4">
-          <div> <BackpackIcon width="24px" height="55px" /></div>
-          <div><BellIcon width="24px" height="55px" /></div>
-          <div><Pencil1Icon width="24px" height="55px" /></div>
-          <div><ArchiveIcon width="24px" height="55px" /></div>
-          <div><TrashIcon width="24px" height="55px" /></div>
+        <div className = "w-1/12">
+          <div className="hover:bg-yellow-100 hover:rounded-full  ml-3 "> <BackpackIcon width="24px" height="55px" className="mx-auto my-auto" /></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full  ml-3 "><BellIcon width="24px" height="55px" className="mx-auto my-auto" /></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full  ml-3 "><Pencil1Icon width="24px" height="55px" className="mx-auto my-auto" /></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full  ml-3 "><ArchiveIcon width="24px" height="55px" className="mx-auto my-auto" /></div>
+          <div className="hover:bg-yellow-100 hover:rounded-full  ml-3 "><TrashIcon width="24px" height="55px" className="mx-auto my-auto" /></div>
         </div>
 
-        <div className = "w-1/2 mt-6">
+        <div className = "w-1/2 mt-6 mx-auto">
           <div><Input placeholder="Take a note" /></div>
           <div>NOTE PANEL</div>
         </div>
