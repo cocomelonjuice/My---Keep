@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
 
-      {/* The goal is clone UI, not functionalatiy */}
+      {/* The goal is to clone UI, not functionality */}
       {/* 1 - mobile responsive - text size -  conatiner witdh, height */}
       {/* 2 - write everything on 1 page first, then split into components when done*/}
       {/* 3 - use shadcn ui/ mui icon/ mantine or any ui library for icon/search bar*/}
