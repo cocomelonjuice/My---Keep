@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input"
 import { Command,CommandInput } from "@/components/ui/command"
 import { BackpackIcon, BellIcon,Pencil1Icon, ArchiveIcon, TrashIcon, HamburgerMenuIcon, ReloadIcon, DashboardIcon, GearIcon, LayersIcon, PersonIcon } from "@radix-ui/react-icons"
+import {ModeToggle} from "@/app/modeToggle"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       {/* 1 - mobile responsive - text size -  conatiner witdh, height */}
       {/* 2 - write everything on 1 page first, then split into components when done*/}
       {/* 3 - use shadcn ui/ mui icon/ mantine or any ui library for icon/search bar*/}
-      {/* build backend with Postgres Vercel : user input a note -> note go to Postgres table-> data from Postgres fetch, render back on user's UI */}
+      {/* build backend with Postgres Supabase/ Vercel : user input a note -> note go to Postgres table-> data from Postgres fetch, render back on user's UI */}
       
       <div className="border-2">
 
@@ -19,6 +20,7 @@ export default function Home() {
           <div className="hover:bg-yellow-100 hover:rounded-full min-w-14" ><HamburgerMenuIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
           <div><a href="https://logowik.com/google-keep-vector-logo-5971.html"><img src="https://logowik.com/content/uploads/images/google-keep3316.jpg" width="60" height="80" /></a></div>
 
+          <div><ModeToggle></ModeToggle></div>
           <div><Command className="bg-yellow-100 rounded-md "><CommandInput placeholder="Search"/></Command></div>
 
           <div className="hover:bg-yellow-100 hover:rounded-full min-w-14"><ReloadIcon width="24px" height="55px" className="mx-auto my-auto"/></div>
